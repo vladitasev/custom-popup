@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>ui5-custom-popup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<script data-ui5-config type="application/json">
+		{
+			"language": "EN"
+		}
+	</script>
+
+	<script src="../../webcomponentsjs/webcomponents-loader.js"></script>
+	<script src="../../resources/bundle.esm.js" type="module"></script>
+	<script nomodule src="../../resources/bundle.es5.js"></script>
+</head>
+
+<body>
+    <ui5-button id="openDialogButton2">Open Popup</ui5-button>
+
+    <ui5-another-custom-popup id="hello-dialog">
+        Custom Popup here!
+        <ui5-button>content button 1</ui5-button>
+        <ui5-button>content button 2</ui5-button>
+    </ui5-another-custom-popup>
+
+    <script>
+		const openBtn2 = document.getElementById("openDialogButton2");
+		const dialog = document.getElementById("hello-dialog");
+
+		openBtn2.addEventListener("click", () => {
+			dialog.open();
+		});
+
+    </script>
+</body>
+
+</html>

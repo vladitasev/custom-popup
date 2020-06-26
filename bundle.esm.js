@@ -19,6 +19,7 @@ import "./dist/Assets.js";
 
 // Import your web components here from the dist/ directory
 import "./dist/CustomPopup.js";
+import "./dist/AnotherCustomPopup.js";
 
 window.RenderScheduler = RenderScheduler;
 window["sap-ui-webcomponents-bundle"] = {
