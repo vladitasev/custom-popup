@@ -29,10 +29,20 @@ class AnotherCustomPopup extends Popup {
 		return AnotherCustomPopupCss;
 	}
 
+	// Implement the 3 abstract methods from Popup.js
 	get isModal() {
 		return true;
 	}
 
+	get _ariaLabelledBy() {
+		return "hdr";
+	}
+
+	get _ariaModal() {
+		return "true";
+	}
+
+	// Set the custom classes to the root and content parts of Popup.js
 	get classes() {
 		return {
 			root: {
